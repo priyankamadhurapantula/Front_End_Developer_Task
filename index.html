@@ -18,7 +18,7 @@
    <form id="form1">
       <div class="top-box " id="top-box">
          <div class="pricing_sec">
-            <input type="radio" id="radio1" name="radio1" value="30" onclick="radiobtn1();">
+            <input type="radio" id="radio1" name="radio" value="" onclick="radiobtn1();">
             <label for="radio1">
                <span>
                   <p class="name m0"> 1 Pair</p>
@@ -81,7 +81,7 @@
       </div>
       <div class="middle-box " id= "middle-box">
          <div class="pricing_sec">
-            <input type="radio" id="radio2" name="radio2" value="30" onclick="radiobtn2();">
+            <input type="radio" id="radio2" name="radio" value="" onclick="radiobtn2();">
             <label for="radio2">
                <span>
                   <p class="name m0"> 2 Pair</p>
@@ -148,7 +148,7 @@
       </div>
       <div class="last-box " id="last-box">
          <div class="pricing_sec">
-            <input type="radio" id="radio3" name="radio3" value="30" onclick="radiobtn3();">
+            <input type="radio" id="radio3" name="radio" value="" onclick="radiobtn3();">
             <label for="radio3">
                <span>
                   <p class="name m0"> 3 Pair</p>
@@ -223,19 +223,26 @@
 // Display attributes on click radio btn
 	function radiobtn2(){
   document.getElementById('attributes_pro2').style.display ='block';
+   document.getElementById('attributes_pro1').style.display ='none';
+    document.getElementById('attributes_pro3').style.display ='none';
    document.getElementById("middle-box").style.border = "2px solid #007F61";
      var element = document.getElementById("middle-box");
         element.style.backgroundColor = "#F4FBF9";
+        
 
 }
 function radiobtn1(){
   document.getElementById('attributes_pro1').style.display ='block';
+  document.getElementById('attributes_pro2').style.display ='none';
+    document.getElementById('attributes_pro3').style.display ='none';
      document.getElementById("top-box").style.border = "2px solid #007F61";
      var element = document.getElementById("top-box");
         element.style.backgroundColor = "#F4FBF9";
 }
 function radiobtn3(){
   document.getElementById('attributes_pro3').style.display ='block';
+   document.getElementById('attributes_pro2').style.display ='none';
+    document.getElementById('attributes_pro1').style.display ='none';
      document.getElementById("last-box").style.border = "2px solid #007F61";
      var element = document.getElementById("last-box");
         element.style.backgroundColor = "#F4FBF9";
